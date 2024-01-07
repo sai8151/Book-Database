@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <title>Add Book</title>
+</head>
+
+<body>
+    <h1>Add a Book</h1>
+    <form method="post">
+        <table>
+            <tr>
+                <th><label for="title">Title:</label></th>
+                <td><input type="text" name="title" required></td>
+            </tr>
+            <tr>
+                <th><label for="author">Author:</label></th>
+                <td><input type="text" name="author" required></td>
+            </tr>
+            <tr>
+                <th><label for="publication_year">Publication Year:</label></th>
+                <td><input type="text" name="publication_year" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Add Book">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

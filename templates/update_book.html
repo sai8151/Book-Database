@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <title>Update Book</title>
+</head>
+
+<body>
+    <h1>Update Book</h1>
+    <form method="post">
+        <label for="new_author">New Author (press Enter to keep the current author):</label>
+        <input type="text" name="new_author"><br>
+        <label for="new_publication_year">New Publication Year (press Enter to keep the current year):</label>
+        <input type="text" name="new_publication_year"><br>
+        <input type="submit" value="Update Book">
+    </form>
+    <a href="{{ url_for('index') }}">Back to All Books</a>
+</body>
+
+</html>
